@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CF42AC31F2418E200851806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AC21F2418E200851806 /* AppDelegate.swift */; };
-		3CF42AC51F2418E200851806 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AC41F2418E200851806 /* LoginViewController.swift */; };
+		3C48F1541F244FB800D7A23E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1531F244FB800D7A23E /* LoginPresenter.swift */; };
+		3C48F1561F24557800D7A23E /* InteractorContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1551F24557800D7A23E /* InteractorContext.swift */; };
+		3C48F15A1F2456ED00D7A23E /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1591F2456ED00D7A23E /* UserSession.swift */; };
+		3C48F15D1F24593E00D7A23E /* AuthenticationWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F15C1F24593E00D7A23E /* AuthenticationWebService.swift */; };
+		3C48F1601F245A1800D7A23E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F15F1F245A1800D7A23E /* UserModel.swift */; };
+		3C48F1621F245A5A00D7A23E /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1611F245A5A00D7A23E /* NetworkProtocol.swift */; };
+		3C48F1641F24657500D7A23E /* SimpleNetworkImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1631F24657500D7A23E /* SimpleNetworkImplementation.swift */; };
+		3C48F1661F24668500D7A23E /* ConfiguarationsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1651F24668500D7A23E /* ConfiguarationsContainer.swift */; };
+		3C48F1691F24699800D7A23E /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1681F24699800D7A23E /* NetworkConfiguration.swift */; };
 		3CF42AC81F2418E200851806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42AC61F2418E200851806 /* Main.storyboard */; };
 		3CF42ACB1F2418E200851806 /* GeoNotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AC91F2418E200851806 /* GeoNotesApp.xcdatamodeld */; };
 		3CF42ACD1F2418E200851806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42ACC1F2418E200851806 /* Assets.xcassets */; };
 		3CF42AD01F2418E200851806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42ACE1F2418E200851806 /* LaunchScreen.storyboard */; };
 		3CF42ADB1F2418E200851806 /* GeoNotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42ADA1F2418E200851806 /* GeoNotesAppTests.swift */; };
 		3CF42AE61F2418E200851806 /* GeoNotesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AE51F2418E200851806 /* GeoNotesAppUITests.swift */; };
+		3CF42B001F242A6600851806 /* StubRouterContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AFF1F242A6600851806 /* StubRouterContext.swift */; };
+		3CF42B081F242ED000851806 /* RouterContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B061F242ED000851806 /* RouterContext.swift */; };
+		3CF42B091F242ED000851806 /* WebServiceContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B071F242ED000851806 /* WebServiceContext.swift */; };
+		3CF42B0D1F242F0300851806 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B0B1F242F0300851806 /* LoginRouter.swift */; };
+		3CF42B0E1F242F0300851806 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B0C1F242F0300851806 /* LoginViewController.swift */; };
+		3CF42B121F242F5B00851806 /* MapsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B101F242F5B00851806 /* MapsRouter.swift */; };
+		3CF42B131F242F5B00851806 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B111F242F5B00851806 /* MapsViewController.swift */; };
+		3CF42B191F2433A600851806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B171F2433A600851806 /* AppDelegate.swift */; };
+		3CF42B1A1F2433A600851806 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B181F2433A600851806 /* ApplicationRouter.swift */; };
+		3CF42B211F2434C500851806 /* RouterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B201F2434C500851806 /* RouterUtils.swift */; };
+		3CF42B231F24377A00851806 /* ContextFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B221F24377A00851806 /* ContextFactory.swift */; };
+		3CF42B271F243C6D00851806 /* UtilsContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B261F243C6D00851806 /* UtilsContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C48F1531F244FB800D7A23E /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		3C48F1551F24557800D7A23E /* InteractorContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorContext.swift; sourceTree = "<group>"; };
+		3C48F1591F2456ED00D7A23E /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		3C48F15C1F24593E00D7A23E /* AuthenticationWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationWebService.swift; sourceTree = "<group>"; };
+		3C48F15F1F245A1800D7A23E /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3C48F1611F245A5A00D7A23E /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		3C48F1631F24657500D7A23E /* SimpleNetworkImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleNetworkImplementation.swift; sourceTree = "<group>"; };
+		3C48F1651F24668500D7A23E /* ConfiguarationsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguarationsContainer.swift; sourceTree = "<group>"; };
+		3C48F1681F24699800D7A23E /* NetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
 		3CF42ABF1F2418E200851806 /* GeoNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CF42AC21F2418E200851806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CF42AC41F2418E200851806 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3CF42AC71F2418E200851806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CF42ACA1F2418E200851806 /* GeoNotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoNotesApp.xcdatamodel; sourceTree = "<group>"; };
 		3CF42ACC1F2418E200851806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +75,18 @@
 		3CF42AE11F2418E200851806 /* GeoNotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoNotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF42AE51F2418E200851806 /* GeoNotesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoNotesAppUITests.swift; sourceTree = "<group>"; };
 		3CF42AE71F2418E200851806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF42AFF1F242A6600851806 /* StubRouterContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubRouterContext.swift; sourceTree = "<group>"; };
+		3CF42B061F242ED000851806 /* RouterContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouterContext.swift; path = RouterContext.swift; sourceTree = "<group>"; };
+		3CF42B071F242ED000851806 /* WebServiceContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServiceContext.swift; path = WebServiceContext.swift; sourceTree = "<group>"; };
+		3CF42B0B1F242F0300851806 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRouter.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		3CF42B0C1F242F0300851806 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3CF42B101F242F5B00851806 /* MapsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapsRouter.swift; path = MapsRouter.swift; sourceTree = "<group>"; };
+		3CF42B111F242F5B00851806 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapsViewController.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		3CF42B171F2433A600851806 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CF42B181F2433A600851806 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApplicationRouter.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
+		3CF42B201F2434C500851806 /* RouterUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouterUtils.swift; path = RouterUtils.swift; sourceTree = "<group>"; };
+		3CF42B221F24377A00851806 /* ContextFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextFactory.swift; sourceTree = "<group>"; };
+		3CF42B261F243C6D00851806 /* UtilsContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +114,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C48F1571F2455F500D7A23E /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				3C48F1591F2456ED00D7A23E /* UserSession.swift */,
+			);
+			name = Interactors;
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		3C48F1581F24560600D7A23E /* App Features */ = {
+			isa = PBXGroup;
+			children = (
+				3CF42B161F24338300851806 /* AppDelegate */,
+				3CF42B0A1F242EF300851806 /* Login */,
+				3CF42B0F1F242F3200851806 /* Maps */,
+			);
+			name = "App Features";
+			path = "App Features";
+			sourceTree = "<group>";
+		};
+		3C48F15B1F2458EB00D7A23E /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				3C48F15C1F24593E00D7A23E /* AuthenticationWebService.swift */,
+				3C48F1611F245A5A00D7A23E /* NetworkProtocol.swift */,
+				3C48F1631F24657500D7A23E /* SimpleNetworkImplementation.swift */,
+			);
+			name = WebServices;
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		3C48F15E1F245A0600D7A23E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C48F15F1F245A1800D7A23E /* UserModel.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C48F1671F24697D00D7A23E /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				3C48F1651F24668500D7A23E /* ConfiguarationsContainer.swift */,
+				3C48F1681F24699800D7A23E /* NetworkConfiguration.swift */,
+			);
+			name = Configurations;
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 		3CF42AB61F2418E100851806 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +187,18 @@
 		3CF42AC11F2418E200851806 /* GeoNotesApp */ = {
 			isa = PBXGroup;
 			children = (
-				3CF42AC21F2418E200851806 /* AppDelegate.swift */,
-				3CF42AC41F2418E200851806 /* LoginViewController.swift */,
-				3CF42AC61F2418E200851806 /* Main.storyboard */,
+				3C48F1581F24560600D7A23E /* App Features */,
+				3C48F1671F24697D00D7A23E /* Configurations */,
+				3CF42B051F242EB500851806 /* Context */,
+				3C48F1571F2455F500D7A23E /* Interactors */,
+				3C48F15E1F245A0600D7A23E /* Models */,
+				3CF42B1D1F24342A00851806 /* Utils */,
+				3C48F15B1F2458EB00D7A23E /* WebServices */,
 				3CF42ACC1F2418E200851806 /* Assets.xcassets */,
-				3CF42ACE1F2418E200851806 /* LaunchScreen.storyboard */,
-				3CF42AD11F2418E200851806 /* Info.plist */,
 				3CF42AC91F2418E200851806 /* GeoNotesApp.xcdatamodeld */,
+				3CF42AD11F2418E200851806 /* Info.plist */,
+				3CF42ACE1F2418E200851806 /* LaunchScreen.storyboard */,
+				3CF42AC61F2418E200851806 /* Main.storyboard */,
 			);
 			path = GeoNotesApp;
 			sourceTree = "<group>";
@@ -115,6 +208,7 @@
 			children = (
 				3CF42ADA1F2418E200851806 /* GeoNotesAppTests.swift */,
 				3CF42ADC1F2418E200851806 /* Info.plist */,
+				3CF42AFF1F242A6600851806 /* StubRouterContext.swift */,
 			);
 			path = GeoNotesAppTests;
 			sourceTree = "<group>";
@@ -126,6 +220,59 @@
 				3CF42AE71F2418E200851806 /* Info.plist */,
 			);
 			path = GeoNotesAppUITests;
+			sourceTree = "<group>";
+		};
+		3CF42B051F242EB500851806 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				3CF42B221F24377A00851806 /* ContextFactory.swift */,
+				3C48F1551F24557800D7A23E /* InteractorContext.swift */,
+				3CF42B061F242ED000851806 /* RouterContext.swift */,
+				3CF42B261F243C6D00851806 /* UtilsContext.swift */,
+				3CF42B071F242ED000851806 /* WebServiceContext.swift */,
+			);
+			name = Context;
+			path = Context;
+			sourceTree = "<group>";
+		};
+		3CF42B0A1F242EF300851806 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3C48F1531F244FB800D7A23E /* LoginPresenter.swift */,
+				3CF42B0B1F242F0300851806 /* LoginRouter.swift */,
+				3CF42B0C1F242F0300851806 /* LoginViewController.swift */,
+			);
+			name = Login;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3CF42B0F1F242F3200851806 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				3CF42B101F242F5B00851806 /* MapsRouter.swift */,
+				3CF42B111F242F5B00851806 /* MapsViewController.swift */,
+			);
+			name = Maps;
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		3CF42B161F24338300851806 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3CF42B171F2433A600851806 /* AppDelegate.swift */,
+				3CF42B181F2433A600851806 /* ApplicationRouter.swift */,
+			);
+			name = AppDelegate;
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3CF42B1D1F24342A00851806 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3CF42B201F2434C500851806 /* RouterUtils.swift */,
+			);
+			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +409,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF42AC51F2418E200851806 /* LoginViewController.swift in Sources */,
+				3CF42B0E1F242F0300851806 /* LoginViewController.swift in Sources */,
+				3CF42B1A1F2433A600851806 /* ApplicationRouter.swift in Sources */,
+				3C48F1661F24668500D7A23E /* ConfiguarationsContainer.swift in Sources */,
+				3CF42B231F24377A00851806 /* ContextFactory.swift in Sources */,
+				3CF42B081F242ED000851806 /* RouterContext.swift in Sources */,
+				3CF42B091F242ED000851806 /* WebServiceContext.swift in Sources */,
+				3CF42B211F2434C500851806 /* RouterUtils.swift in Sources */,
+				3C48F15A1F2456ED00D7A23E /* UserSession.swift in Sources */,
+				3CF42B131F242F5B00851806 /* MapsViewController.swift in Sources */,
+				3C48F1641F24657500D7A23E /* SimpleNetworkImplementation.swift in Sources */,
+				3C48F1601F245A1800D7A23E /* UserModel.swift in Sources */,
+				3C48F1691F24699800D7A23E /* NetworkConfiguration.swift in Sources */,
+				3C48F15D1F24593E00D7A23E /* AuthenticationWebService.swift in Sources */,
 				3CF42ACB1F2418E200851806 /* GeoNotesApp.xcdatamodeld in Sources */,
-				3CF42AC31F2418E200851806 /* AppDelegate.swift in Sources */,
+				3C48F1561F24557800D7A23E /* InteractorContext.swift in Sources */,
+				3CF42B0D1F242F0300851806 /* LoginRouter.swift in Sources */,
+				3CF42B121F242F5B00851806 /* MapsRouter.swift in Sources */,
+				3C48F1621F245A5A00D7A23E /* NetworkProtocol.swift in Sources */,
+				3C48F1541F244FB800D7A23E /* LoginPresenter.swift in Sources */,
+				3CF42B191F2433A600851806 /* AppDelegate.swift in Sources */,
+				3CF42B271F243C6D00851806 /* UtilsContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF42B001F242A6600851806 /* StubRouterContext.swift in Sources */,
 				3CF42ADB1F2418E200851806 /* GeoNotesAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +472,7 @@
 				3CF42AC71F2418E200851806 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		3CF42ACE1F2418E200851806 /* LaunchScreen.storyboard */ = {
@@ -314,6 +481,7 @@
 				3CF42ACF1F2418E200851806 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
