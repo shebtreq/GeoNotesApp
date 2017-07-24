@@ -37,19 +37,26 @@ extension JsonMappable {
     func convert<U>(value: U?, in json: inout [String: Any], with key: String) {
         guard let value = value else { return }
         
-        if (value is String || value is Int), let value = json[key] as? String {
+        if value is String || value is Int {
             json[key] = value as Any
-        }
-        
-        if let jsonValue = value as? JsonMappable {
+        } else if let jsonValue = value as? JsonMappable {
             json[key] = jsonValue.toJson
+        } else {
+            fatalError()
         }
-        
-        fatalError()
     }
     
-    func convert<U>() -> [U] {
-        return []
+    func convert<U>(value: [U]?, in json: inout [String: Any], with key: String) {
+        guard let value = value else { return }
+        
+        if value is [String] || value is [Int] {
+            json[key] = value as [Any]
+        } else if let array = value as? [JsonMappable] {
+            json[key] = array.forEach({ $0.toJson })
+            return
+        } else {
+            fatalError()
+        }
     }
 }
 

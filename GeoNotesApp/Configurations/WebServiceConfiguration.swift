@@ -8,6 +8,6 @@ class WebServiceConfiguration: ConfigurationProtocol {
             (key: "key1", value: "value1"),
             (key: "key2", value: "value2")
         ])
-        networkClass.set(baseUrl: "http://localhost:3000/")
+        networkClass.set(baseUrl: "http://localhost:3000")
     }
 }

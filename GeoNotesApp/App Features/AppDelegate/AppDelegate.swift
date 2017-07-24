@@ -7,9 +7,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        if window == nil {
-            window = UIWindow(frame: UIScreen.main.bounds)
-        }
+        ConfiguarationsContainer.configure()
+        window = window ?? UIWindow(frame: UIScreen.main.bounds)
         RouterContext.instance.applicationRouter.routeToLogin()
         return true
     }

@@ -7,14 +7,13 @@ protocol LoginPresenterProtocol {
 class LoginPresenter: LoginPresenterProtocol {
     func attempToLogin(withUser name: String?, password: String?) {
         if let name = name, let password = password {
-            //FIX THIS NEXT
-            WebServiceContext.instance.authenticationWebService
-                .login(user: UserModel(name), success: {
-                    print("success")
-                    RouterContext.instance.loginRouter.routeToMaps()
-                }, failure: { 
-                    print("failed")
-                })
+            InteractorContext.instance.authenticationInteractor
+                .authentication(withName: name,
+                                password: password,
+                                success: {
+                                    RouterContext.instance.loginRouter.routeToMaps()
+                                }, failure: {
+                                })
         }
     }
 }

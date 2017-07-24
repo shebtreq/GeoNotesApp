@@ -6,5 +6,5 @@ class UtilsContext {
     
     private init() {}
     
-    var routerUtils: RouterUtilsProtocol.Type { return RouterUtils.self }
+    var flowUtils: FlowUtilsProtocol.Type { return FlowUtils.self }
 }

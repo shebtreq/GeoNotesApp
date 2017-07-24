@@ -10,30 +10,33 @@ enum HttpMethod: String {
     }
 }
 
-class SimpleNetworkImplementation: NetworkProtocol {
+class SimpleNetworkImplementation {
     
-    private class DecoratedURLRequest {
+    fileprivate static var defaultHeaders: [(key: String, value: String)] = [(key: String, value: String)]()
+    fileprivate static var baseUrl: String = ""
+    
+    fileprivate class DecoratedURLRequest {
         private(set) var urlRequest: URLRequest
         
         init?(urlString: String,
-             httpMethod: HttpMethod,
-             httpBody: Data? = nil) {
+              httpMethod: HttpMethod,
+              httpBody: Data? = nil) {
             guard let url = URL(string: SimpleNetworkImplementation.baseUrl + urlString) else { return nil }
             self.urlRequest = URLRequest(url: url)
+            self.urlRequest.httpMethod = httpMethod.value
             SimpleNetworkImplementation.defaultHeaders
                 .forEach({self.urlRequest.addValue($0.key, forHTTPHeaderField: $0.value)})
         }
     }
+}
+
+extension SimpleNetworkImplementation: NetworkProtocol {
     
-    private static var defaultHeaders: [(key: String, value: String)] = [(key: String, value: String)]()
-    private static var baseUrl: String = ""
-    
-    static func set(baseUrl: String) {
-        SimpleNetworkImplementation.baseUrl = baseUrl
-    }
+    static func set(baseUrl: String) { SimpleNetworkImplementation.baseUrl = baseUrl }
     
     static func add(defaultHeaders: [(key: String, value: String)]) {
-        SimpleNetworkImplementation.defaultHeaders.append(contentsOf: defaultHeaders)
+        SimpleNetworkImplementation.defaultHeaders
+            .append(contentsOf: defaultHeaders)
     }
     
     func get(urlString: String,
@@ -50,14 +53,6 @@ class SimpleNetworkImplementation: NetworkProtocol {
                                 if let data = data {
                                     let jsonResponse = NSKeyedUnarchiver.unarchiveObject(with: data) as! [String : Any]
                                     success(jsonResponse)
-//                                    do {
-//                                        let respoonse = NSKeyedUnarchiver.unarchiveObject(with: data) as! [String : Any]
-//                                        if let jsonResult  = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : Any] {
-//                                            success(respoonse)
-//                                        }
-//                                    } catch {
-//                                        failure(error)
-//                                    }
                                 }
                                 if let error = error {
                                     failure(error)
@@ -70,10 +65,10 @@ class SimpleNetworkImplementation: NetworkProtocol {
              success: @escaping () -> Void,
              failure: @escaping (_ error: Error) -> Void) {
         let data : Data = NSKeyedArchiver.archivedData(withRootObject: body)
-        guard let decoratedUrlRequest = DecoratedURLRequest(urlString: urlString, httpMethod: .GET, httpBody: data) else {
+        
+        guard let decoratedUrlRequest = DecoratedURLRequest(urlString: urlString, httpMethod: .PUT, httpBody: data) else {
             return failure(NSError(domain: "url malformed", code: 0, userInfo: nil))
         }
-
         NSURLConnection
             .sendAsynchronousRequest(decoratedUrlRequest.urlRequest,
                                      queue: OperationQueue.main,

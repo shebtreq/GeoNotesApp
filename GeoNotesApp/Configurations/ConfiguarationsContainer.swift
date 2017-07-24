@@ -15,4 +15,8 @@ class ConfiguarationsContainer  {
     private init() {
         configurations.forEach({$0.configure()})
     }
+    
+    static func configure() {
+        _ = ConfiguarationsContainer.instance
+    }
 }

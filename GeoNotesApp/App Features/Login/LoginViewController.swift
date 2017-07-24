@@ -21,7 +21,5 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
-    
 }
 

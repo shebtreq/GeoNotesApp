@@ -17,6 +17,8 @@
 		3C48F1661F24668500D7A23E /* ConfiguarationsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1651F24668500D7A23E /* ConfiguarationsContainer.swift */; };
 		3C48F1691F24699800D7A23E /* WebServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F1681F24699800D7A23E /* WebServiceConfiguration.swift */; };
 		3C48F16B1F25CFEC00D7A23E /* JsonMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F16A1F25CFEC00D7A23E /* JsonMappable.swift */; };
+		3C4C7F231F261FA300BC0D49 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C7F221F261FA300BC0D49 /* AuthenticationInteractor.swift */; };
+		3C4C7F261F2624AD00BC0D49 /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */; };
 		3CF42AC81F2418E200851806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42AC61F2418E200851806 /* Main.storyboard */; };
 		3CF42ACB1F2418E200851806 /* GeoNotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AC91F2418E200851806 /* GeoNotesApp.xcdatamodeld */; };
 		3CF42ACD1F2418E200851806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42ACC1F2418E200851806 /* Assets.xcassets */; };
@@ -32,7 +34,7 @@
 		3CF42B131F242F5B00851806 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B111F242F5B00851806 /* MapsViewController.swift */; };
 		3CF42B191F2433A600851806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B171F2433A600851806 /* AppDelegate.swift */; };
 		3CF42B1A1F2433A600851806 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B181F2433A600851806 /* ApplicationRouter.swift */; };
-		3CF42B211F2434C500851806 /* RouterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B201F2434C500851806 /* RouterUtils.swift */; };
+		3CF42B211F2434C500851806 /* FlowUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B201F2434C500851806 /* FlowUtils.swift */; };
 		3CF42B271F243C6D00851806 /* UtilsContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B261F243C6D00851806 /* UtilsContext.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		3C48F1651F24668500D7A23E /* ConfiguarationsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguarationsContainer.swift; sourceTree = "<group>"; };
 		3C48F1681F24699800D7A23E /* WebServiceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceConfiguration.swift; sourceTree = "<group>"; };
 		3C48F16A1F25CFEC00D7A23E /* JsonMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonMappable.swift; sourceTree = "<group>"; };
+		3C4C7F221F261FA300BC0D49 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
+		3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		3CF42ABF1F2418E200851806 /* GeoNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF42AC71F2418E200851806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CF42ACA1F2418E200851806 /* GeoNotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoNotesApp.xcdatamodel; sourceTree = "<group>"; };
@@ -85,7 +89,7 @@
 		3CF42B111F242F5B00851806 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		3CF42B171F2433A600851806 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF42B181F2433A600851806 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
-		3CF42B201F2434C500851806 /* RouterUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterUtils.swift; sourceTree = "<group>"; };
+		3CF42B201F2434C500851806 /* FlowUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowUtils.swift; sourceTree = "<group>"; };
 		3CF42B261F243C6D00851806 /* UtilsContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,7 @@
 		3C48F1571F2455F500D7A23E /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				3C4C7F221F261FA300BC0D49 /* AuthenticationInteractor.swift */,
 				3C48F1591F2456ED00D7A23E /* UserSession.swift */,
 			);
 			path = Interactors;
@@ -160,6 +165,15 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		3C4C7F241F26249700BC0D49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3CF42AB61F2418E100851806 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +200,7 @@
 				3C48F1581F24560600D7A23E /* App Features */,
 				3C48F1671F24697D00D7A23E /* Configurations */,
 				3CF42B051F242EB500851806 /* Context */,
+				3C4C7F241F26249700BC0D49 /* Extensions */,
 				3C48F1571F2455F500D7A23E /* Interactors */,
 				3C48F15E1F245A0600D7A23E /* Models */,
 				3CF42B1D1F24342A00851806 /* Utils */,
@@ -260,7 +275,7 @@
 		3CF42B1D1F24342A00851806 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3CF42B201F2434C500851806 /* RouterUtils.swift */,
+				3CF42B201F2434C500851806 /* FlowUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -405,15 +420,17 @@
 				3C48F1661F24668500D7A23E /* ConfiguarationsContainer.swift in Sources */,
 				3CF42B081F242ED000851806 /* RouterContext.swift in Sources */,
 				3CF42B091F242ED000851806 /* WebServiceContext.swift in Sources */,
-				3CF42B211F2434C500851806 /* RouterUtils.swift in Sources */,
+				3CF42B211F2434C500851806 /* FlowUtils.swift in Sources */,
 				3C48F15A1F2456ED00D7A23E /* UserSession.swift in Sources */,
 				3CF42B131F242F5B00851806 /* MapsViewController.swift in Sources */,
 				3C48F1641F24657500D7A23E /* SimpleNetworkImplementation.swift in Sources */,
 				3C48F1601F245A1800D7A23E /* UserModel.swift in Sources */,
 				3C48F1691F24699800D7A23E /* WebServiceConfiguration.swift in Sources */,
 				3C48F15D1F24593E00D7A23E /* AuthenticationWebService.swift in Sources */,
+				3C4C7F261F2624AD00BC0D49 /* UIWindowExtensions.swift in Sources */,
 				3CF42ACB1F2418E200851806 /* GeoNotesApp.xcdatamodeld in Sources */,
 				3C48F1561F24557800D7A23E /* InteractorContext.swift in Sources */,
+				3C4C7F231F261FA300BC0D49 /* AuthenticationInteractor.swift in Sources */,
 				3CF42B0D1F242F0300851806 /* LoginRouter.swift in Sources */,
 				3CF42B121F242F5B00851806 /* MapsRouter.swift in Sources */,
 				3C48F1621F245A5A00D7A23E /* NetworkProtocol.swift in Sources */,

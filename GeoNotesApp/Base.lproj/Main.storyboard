@@ -73,7 +73,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="-793" y="115"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="qPg-G6-UWC">
+            <objects>
+                <viewController storyboardIdentifier="MapsViewController" id="74c-qr-T2H" customClass="MapsViewController" customModule="GeoNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8gW-tt-YWE"/>
+                        <viewControllerLayoutGuide type="bottom" id="5wO-7P-akh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LgX-JV-EHv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dd0-9i-sns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="115"/>
         </scene>
     </scenes>
 </document>

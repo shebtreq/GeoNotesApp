@@ -89,44 +89,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GeoNotesApp/Configurations/ConfiguarationsContainer.swift"
-            timestampString = "522565863.5471"
+            filePath = "GeoNotesApp/Models/JsonMappable.swift"
+            timestampString = "522589042.126754"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "init()"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "convert(value:in:with:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "GeoNotesApp.ConfiguarationsContainer.init () -&gt; GeoNotesApp.ConfiguarationsContainer"
+                  symbolName = "(extension in GeoNotesApp):GeoNotesApp.JsonMappable.convert &lt;A&gt; (value : Swift.Optional&lt;Swift.Array&lt;A1&gt;&gt;, in : inout Swift.Dictionary&lt;Swift.String, Any&gt;, with : Swift.String) -&gt; ()"
                   moduleName = "GeoNotesApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/Configurations/ConfiguarationsContainer.swift"
-                  timestampString = "522578378.77994"
+                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/Models/JsonMappable.swift"
+                  timestampString = "522595425.675758"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "96">
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "733">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "GeoNotesApp.ConfiguarationsContainer.(init () -&gt; GeoNotesApp.ConfiguarationsContainer).(closure #1)"
+                  symbolName = "(extension in GeoNotesApp):GeoNotesApp.JsonMappable.(convert &lt;A&gt; (value : Swift.Optional&lt;Swift.Array&lt;A1&gt;&gt;, in : inout Swift.Dictionary&lt;Swift.String, Any&gt;, with : Swift.String) -&gt; ()).(closure #1)"
                   moduleName = "GeoNotesApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/Configurations/ConfiguarationsContainer.swift"
-                  timestampString = "522578378.783842"
+                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/Models/JsonMappable.swift"
+                  timestampString = "522595425.67888"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -137,29 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GeoNotesApp/App Features/AppDelegate/ApplicationRouter.swift"
-            timestampString = "522566084.486999"
+            filePath = "GeoNotesApp/WebServices/SimpleNetworkImplementation.swift"
+            timestampString = "522591972.849071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "routeToLogin()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GeoNotesApp/WebServices/AuthenticationWebService.swift"
-            timestampString = "522578309.226443"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "login(user:success:failure:)"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "put(urlString:body:success:failure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,12 +154,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GeoNotesApp/App Features/Login/LoginRouter.swift"
-            timestampString = "522576952.653043"
+            timestampString = "522595345.582949"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7"
-            endingLineNumber = "7"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
             landmarkName = "routeToMaps()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeoNotesApp/Utils/FlowUtils.swift"
+            timestampString = "522595294.106146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "pushViewController(withIdentifier:fromStoryBoard:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
