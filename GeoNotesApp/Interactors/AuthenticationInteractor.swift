@@ -7,10 +7,10 @@ protocol AuthenticationInteractorProtcol {
 
 class AuthenticationInteractor: AuthenticationInteractorProtcol {
     func authentication(withName name: String, password: String, success: @escaping () -> Void, failure: @escaping () -> Void) {
-        WebServiceContext.instance.authenticationWebService
+        WebServiceContextBridge.get.authenticationWebService
             .login(user: UserModel(name),
                    success: {
-                        InteractorContext.instance.userSession.set(userName: name)
+                        InteractorContextBridge.get.userSession.set(userName: name)
                         success()
                  },failure: failure)
     }

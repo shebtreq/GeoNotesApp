@@ -7,11 +7,11 @@ protocol LoginPresenterProtocol {
 class LoginPresenter: LoginPresenterProtocol {
     func attempToLogin(withUser name: String?, password: String?) {
         if let name = name, let password = password {
-            InteractorContext.instance.authenticationInteractor
+            InteractorContextBridge.get.authenticationInteractor
                 .authentication(withName: name,
                                 password: password,
                                 success: {
-                                    RouterContext.instance.loginRouter.routeToMaps()
+                                    RouterContextBridge.get.loginRouter.routeToMaps()
                                 }, failure: {
                                 })
         }

@@ -7,7 +7,7 @@ protocol ApplicationRouterProtocol {
 class ApplicationRouter: ApplicationRouterProtocol {
 
     private static var flowUtils: FlowUtilsProtocol.Type {
-        return UtilsContext.instance.flowUtils
+        return UtilsContextBridge.get.flowUtils
     }
     
     static func routeToLogin() {

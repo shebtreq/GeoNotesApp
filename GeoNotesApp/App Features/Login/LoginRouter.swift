@@ -4,7 +4,7 @@ protocol LoginRouterProtocol {
 
 class LoginRouter: LoginRouterProtocol {
     static func routeToMaps() {
-        let viewController: MapsViewController = UtilsContext.instance.flowUtils
+        let viewController: MapsViewController = UtilsContextBridge.get.flowUtils
             .pushViewController(
                 withIdentifier: "MapsViewController",
                 fromStoryBoard: "Main")
