@@ -1,9 +1,10 @@
 import Foundation
 
-protocol UtilsContextProtocol {
-    static var routerUtils: RouterUtilsProtocol.Type { get }
-}
-
-class UtilsContext: UtilsContextProtocol {
-    static var routerUtils: RouterUtilsProtocol.Type { return RouterUtils.self }
+class UtilsContext {
+    
+    static let instance = UtilsContext()
+    
+    private init() {}
+    
+    var routerUtils: RouterUtilsProtocol.Type { return RouterUtils.self }
 }

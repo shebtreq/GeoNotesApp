@@ -8,11 +8,12 @@ class LoginPresenter: LoginPresenterProtocol {
     func attempToLogin(withUser name: String?, password: String?) {
         if let name = name, let password = password {
             //FIX THIS NEXT
-            ContextFactory.instance.webServiceContext.authenticationWebService
-                .login(user: UserModel(), success: { 
-                    
+            WebServiceContext.instance.authenticationWebService
+                .login(user: UserModel(name), success: {
+                    print("success")
+                    RouterContext.instance.loginRouter.routeToMaps()
                 }, failure: { 
-                    
+                    print("failed")
                 })
         }
     }

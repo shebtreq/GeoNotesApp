@@ -1,11 +1,10 @@
 import Foundation
-
-protocol WebServiceContextProtocol {
-    static var network: NetworkProtocol { get }
-    static var authenticationWebService: AuthenticationWebServiceProtocol.Type { get }
-}
-
-class WebServiceContext: WebServiceContextProtocol {
-    static var network: NetworkProtocol { return SimpleNetworkImplementation() }
-    static var authenticationWebService: AuthenticationWebServiceProtocol.Type { return AuthenticationWebService.self }
+class WebServiceContext {
+    
+    static let instance = WebServiceContext()
+    
+    private init() {}
+    
+    var network: NetworkProtocol { return SimpleNetworkImplementation() }
+    var authenticationWebService: AuthenticationWebServiceProtocol.Type { return AuthenticationWebService.self }
 }

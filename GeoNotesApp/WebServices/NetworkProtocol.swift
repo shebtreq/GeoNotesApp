@@ -10,8 +10,9 @@ import Foundation
 
 protocol NetworkProtocol {
     static func add(defaultHeaders: [(key: String, value: String)])
-    func get(url: String, success: @escaping (_ response: [String: Any]) -> Void, failure: @escaping (_ error: NSError) -> Void)
-    func put(url: String, body: [String: Any], success: () -> Void, failure: (_ error: NSError) -> Void)
+    static func set(baseUrl: String)
+    func get(urlString: String, success: @escaping (_ response: [String: Any]) -> Void, failure: @escaping (_ error: Error) -> Void)
+    func put(urlString: String, body: [String: Any], success: @escaping () -> Void, failure: @escaping (_ error: Error) -> Void)
 }
 
 

@@ -1,12 +1,19 @@
 import Foundation
 
 protocol AuthenticationWebServiceProtocol {
-    static func login(user: UserModel, success: () -> Void, failure: () -> Void)
+    static func login(user: UserModel,
+                      success: @escaping () -> Void,
+                      failure: @escaping () -> Void)
 }
 
 class AuthenticationWebService: AuthenticationWebServiceProtocol {
-    static func login(user: UserModel, success: () -> Void, failure: () -> Void) {
-        //ContextFactory.instance.webServiceContext.network.
+    static func login(user: UserModel,
+                      success: @escaping () -> Void,
+                      failure: @escaping () -> Void) {
+        WebServiceContext.instance.network.put(urlString: "/login",
+                                               body: user.toJson,
+                                               success: success,
+                                               failure: { _ in failure() })
     }
 }
 

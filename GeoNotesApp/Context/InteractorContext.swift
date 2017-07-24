@@ -1,10 +1,11 @@
 import Foundation
 
-protocol InteractorContextProtocol {
-    var userSession: UserSessionProtocol { get }
-}
-
-class InteractorContext: InteractorContextProtocol {
+class InteractorContext {
+    
+    static let instance = InteractorContext()
+    
+    private init() {}
+    
     var userSession: UserSessionProtocol = UserSession.instance
 }
 

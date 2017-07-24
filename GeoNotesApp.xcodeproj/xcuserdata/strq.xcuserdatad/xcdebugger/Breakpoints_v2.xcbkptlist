@@ -17,38 +17,6 @@
             endingLineNumber = "16"
             landmarkName = "init()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GeoNotesApp.ConfiguarationsContainer.init () -&gt; GeoNotesApp.ConfiguarationsContainer"
-                  moduleName = "GeoNotesApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/ConfiguarationsContainer.swift"
-                  timestampString = "522541206.172662"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "96">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GeoNotesApp.ConfiguarationsContainer.(init () -&gt; GeoNotesApp.ConfiguarationsContainer).(closure #1)"
-                  moduleName = "GeoNotesApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/ConfiguarationsContainer.swift"
-                  timestampString = "522541206.176108"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -113,6 +81,102 @@
             endingLineNumber = "11"
             landmarkName = "window"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeoNotesApp/Configurations/ConfiguarationsContainer.swift"
+            timestampString = "522565863.5471"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeoNotesApp.ConfiguarationsContainer.init () -&gt; GeoNotesApp.ConfiguarationsContainer"
+                  moduleName = "GeoNotesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/Configurations/ConfiguarationsContainer.swift"
+                  timestampString = "522578378.77994"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GeoNotesApp.ConfiguarationsContainer.(init () -&gt; GeoNotesApp.ConfiguarationsContainer).(closure #1)"
+                  moduleName = "GeoNotesApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strq/Desktop/GeoNotesApp/GeoNotesApp/Configurations/ConfiguarationsContainer.swift"
+                  timestampString = "522578378.783842"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeoNotesApp/App Features/AppDelegate/ApplicationRouter.swift"
+            timestampString = "522566084.486999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "routeToLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeoNotesApp/WebServices/AuthenticationWebService.swift"
+            timestampString = "522578309.226443"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "login(user:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GeoNotesApp/App Features/Login/LoginRouter.swift"
+            timestampString = "522576952.653043"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "routeToMaps()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

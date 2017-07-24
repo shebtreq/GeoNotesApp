@@ -7,7 +7,7 @@ protocol ApplicationRouterProtocol {
 class ApplicationRouter: ApplicationRouterProtocol {
 
     private static var routerUtils: RouterUtilsProtocol.Type {
-        return ContextFactory.instance.utilsContext.routerUtils
+        return UtilsContext.instance.routerUtils
     }
     
     static func routeToLogin() {
