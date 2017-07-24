@@ -19,6 +19,8 @@
 		3C48F16B1F25CFEC00D7A23E /* JsonMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48F16A1F25CFEC00D7A23E /* JsonMappable.swift */; };
 		3C4C7F231F261FA300BC0D49 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C7F221F261FA300BC0D49 /* AuthenticationInteractor.swift */; };
 		3C4C7F261F2624AD00BC0D49 /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */; };
+		3C4C7F291F2631E600BC0D49 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4C7F281F2631E600BC0D49 /* MapKit.framework */; };
+		3C4C7F2B1F2631ED00BC0D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4C7F2A1F2631ED00BC0D49 /* UIKit.framework */; };
 		3CF42AC81F2418E200851806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42AC61F2418E200851806 /* Main.storyboard */; };
 		3CF42ACB1F2418E200851806 /* GeoNotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AC91F2418E200851806 /* GeoNotesApp.xcdatamodeld */; };
 		3CF42ACD1F2418E200851806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42ACC1F2418E200851806 /* Assets.xcassets */; };
@@ -34,7 +36,7 @@
 		3CF42B131F242F5B00851806 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B111F242F5B00851806 /* MapsViewController.swift */; };
 		3CF42B191F2433A600851806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B171F2433A600851806 /* AppDelegate.swift */; };
 		3CF42B1A1F2433A600851806 /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B181F2433A600851806 /* ApplicationRouter.swift */; };
-		3CF42B211F2434C500851806 /* FlowUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B201F2434C500851806 /* FlowUtils.swift */; };
+		3CF42B211F2434C500851806 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B201F2434C500851806 /* ViewUtils.swift */; };
 		3CF42B271F243C6D00851806 /* UtilsContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42B261F243C6D00851806 /* UtilsContext.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		3C48F16A1F25CFEC00D7A23E /* JsonMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonMappable.swift; sourceTree = "<group>"; };
 		3C4C7F221F261FA300BC0D49 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
 		3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
+		3C4C7F281F2631E600BC0D49 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3C4C7F2A1F2631ED00BC0D49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3CF42ABF1F2418E200851806 /* GeoNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF42AC71F2418E200851806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CF42ACA1F2418E200851806 /* GeoNotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoNotesApp.xcdatamodel; sourceTree = "<group>"; };
@@ -89,7 +93,7 @@
 		3CF42B111F242F5B00851806 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		3CF42B171F2433A600851806 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF42B181F2433A600851806 /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
-		3CF42B201F2434C500851806 /* FlowUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowUtils.swift; sourceTree = "<group>"; };
+		3CF42B201F2434C500851806 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		3CF42B261F243C6D00851806 /* UtilsContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4C7F2B1F2631ED00BC0D49 /* UIKit.framework in Frameworks */,
+				3C4C7F291F2631E600BC0D49 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +176,16 @@
 			children = (
 				3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C4C7F271F2631E500BC0D49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C4C7F2A1F2631ED00BC0D49 /* UIKit.framework */,
+				3C4C7F281F2631E600BC0D49 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3CF42AB61F2418E100851806 = {
@@ -181,6 +195,7 @@
 				3CF42AD91F2418E200851806 /* GeoNotesAppTests */,
 				3CF42AE41F2418E200851806 /* GeoNotesAppUITests */,
 				3CF42AC01F2418E200851806 /* Products */,
+				3C4C7F271F2631E500BC0D49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,7 +290,7 @@
 		3CF42B1D1F24342A00851806 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3CF42B201F2434C500851806 /* FlowUtils.swift */,
+				3CF42B201F2434C500851806 /* ViewUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -349,6 +364,11 @@
 					3CF42ABE1F2418E100851806 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3CF42AD51F2418E200851806 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -420,7 +440,7 @@
 				3C48F1661F24668500D7A23E /* ConfiguarationsContainer.swift in Sources */,
 				3CF42B081F242ED000851806 /* RouterContext.swift in Sources */,
 				3CF42B091F242ED000851806 /* WebServiceContext.swift in Sources */,
-				3CF42B211F2434C500851806 /* FlowUtils.swift in Sources */,
+				3CF42B211F2434C500851806 /* ViewUtils.swift in Sources */,
 				3C48F15A1F2456ED00D7A23E /* UserSession.swift in Sources */,
 				3CF42B131F242F5B00851806 /* MapsViewController.swift in Sources */,
 				3C48F1641F24657500D7A23E /* SimpleNetworkImplementation.swift in Sources */,

@@ -6,12 +6,12 @@ protocol ApplicationRouterProtocol {
 
 class ApplicationRouter: ApplicationRouterProtocol {
 
-    private static var flowUtils: FlowUtilsProtocol.Type {
-        return UtilsContextBridge.get.flowUtils
+    private static var viewUtils: ViewUtilsProtocol.Type {
+        return UtilsContextBridge.get.viewUtils
     }
     
     static func routeToLogin() {
-        let viewController: LoginViewController = flowUtils.addViewControllerWithNavigationToRoot(withIdentifier: "LoginViewController", fromStoryBoard: "Main")
+        let viewController: LoginViewController = viewUtils.addViewControllerWithNavigationToRoot(withIdentifier: "LoginViewController", fromStoryBoard: "Main")
         viewController.loginPresenter = LoginPresenter()
     }
 }

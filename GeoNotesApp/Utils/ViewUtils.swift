@@ -1,13 +1,14 @@
 import Foundation
 import UIKit
 
-protocol FlowUtilsProtocol {
+protocol ViewUtilsProtocol {
     static func addViewControllerWithNavigationToRoot<U: UIViewController>(withIdentifier identifier: String, fromStoryBoard storyBoard: String) -> U
     static func pushViewController<U: UIViewController>(withIdentifier identifier: String, fromStoryBoard storyBoard: String) -> U
     static func presentViewController<U: UIViewController>(withIdentifier identifier: String, fromStoryBoard storyBoard: String, transition: UIModalTransitionStyle?, completionBlock: (() -> Void)?) -> U
+    static func presentAlert(withTitle title: String, message: String?)
 }
 
-class FlowUtils: FlowUtilsProtocol {
+class ViewUtils: ViewUtilsProtocol {
     
     private static var window: UIWindow? {
         return (UIApplication.shared.delegate?.window)!
@@ -38,5 +39,11 @@ class FlowUtils: FlowUtilsProtocol {
             viewController.modalTransitionStyle = transition
         }
         return viewController as! U
+    }
+    
+    static func presentAlert(withTitle title: String, message: String?) {
+        let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        window?.visibleViewController?.present(alertView, animated: true, completion: nil)
     }
 }

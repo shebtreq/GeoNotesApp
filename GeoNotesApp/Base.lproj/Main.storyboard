@@ -86,12 +86,49 @@
                     <view key="view" contentMode="scaleToFill" id="LgX-JV-EHv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-SO-gqW">
+                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-Q2-v52">
+                                <rect key="frame" x="0.0" y="20" width="282" height="92"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="GXf-7R-rK5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWR-9E-sdW">
+                                <rect key="frame" x="302" y="41" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="didPressSubmit:" destination="74c-qr-T2H" eventType="touchUpInside" id="nFZ-XY-neE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hWR-9E-sdW" secondAttribute="trailing" constant="8" id="3qV-tx-rjh"/>
+                            <constraint firstItem="qf8-Q2-v52" firstAttribute="top" secondItem="8gW-tt-YWE" secondAttribute="bottom" id="4RH-fB-TaL"/>
+                            <constraint firstItem="hWR-9E-sdW" firstAttribute="leading" secondItem="qf8-Q2-v52" secondAttribute="trailing" constant="20" id="9d8-Qb-4L5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nFM-SO-gqW" secondAttribute="trailing" constant="-16" id="IeM-9J-oYY"/>
+                            <constraint firstItem="hWR-9E-sdW" firstAttribute="top" secondItem="8gW-tt-YWE" secondAttribute="bottom" constant="21" id="SuY-tu-2Pj"/>
+                            <constraint firstItem="qf8-Q2-v52" firstAttribute="leading" secondItem="LgX-JV-EHv" secondAttribute="leadingMargin" constant="-16" id="dsh-9t-6G0"/>
+                            <constraint firstItem="5wO-7P-akh" firstAttribute="top" secondItem="nFM-SO-gqW" secondAttribute="bottom" id="iEt-nL-qxU"/>
+                            <constraint firstItem="nFM-SO-gqW" firstAttribute="leading" secondItem="LgX-JV-EHv" secondAttribute="leadingMargin" constant="-16" id="rjA-Mt-RsH"/>
+                            <constraint firstItem="nFM-SO-gqW" firstAttribute="top" secondItem="qf8-Q2-v52" secondAttribute="bottom" constant="-2" id="zrC-LM-QuR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="nFM-SO-gqW" id="KmA-Eh-Ndp"/>
+                        <outlet property="submitButton" destination="hWR-9E-sdW" id="7mA-pE-nKY"/>
+                        <outlet property="textView" destination="qf8-Q2-v52" id="zha-e5-XSy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dd0-9i-sns" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121" y="115"/>
+            <point key="canvasLocation" x="-122.40000000000001" y="114.69265367316342"/>
         </scene>
     </scenes>
 </document>

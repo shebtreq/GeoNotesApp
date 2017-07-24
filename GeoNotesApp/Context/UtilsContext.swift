@@ -5,9 +5,9 @@ class UtilsContextBridge {
 }
 
 protocol UtilsContextProtcol {
-    static var flowUtils: FlowUtilsProtocol.Type { get }
+    static var viewUtils: ViewUtilsProtocol.Type { get }
 }
 
 class UtilsContext: UtilsContextProtcol {
-    static var flowUtils: FlowUtilsProtocol.Type { return FlowUtils.self }
+    static var viewUtils: ViewUtilsProtocol.Type { return ViewUtils.self }
 }

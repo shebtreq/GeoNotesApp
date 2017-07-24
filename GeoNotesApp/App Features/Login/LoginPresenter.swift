@@ -13,6 +13,7 @@ class LoginPresenter: LoginPresenterProtocol {
                                 success: {
                                     RouterContextBridge.get.loginRouter.routeToMaps()
                                 }, failure: {
+                                    UtilsContextBridge.get.viewUtils.presentAlert(withTitle: "Error", message: nil)
                                 })
         }
     }
