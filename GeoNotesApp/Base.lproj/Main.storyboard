@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-SO-gqW">
-                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="537"/>
                             </mapView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-Q2-v52">
                                 <rect key="frame" x="0.0" y="20" width="282" height="92"/>
@@ -115,7 +115,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="nFM-SO-gqW" secondAttribute="trailing" constant="-16" id="IeM-9J-oYY"/>
                             <constraint firstItem="hWR-9E-sdW" firstAttribute="top" secondItem="8gW-tt-YWE" secondAttribute="bottom" constant="21" id="SuY-tu-2Pj"/>
                             <constraint firstItem="qf8-Q2-v52" firstAttribute="leading" secondItem="LgX-JV-EHv" secondAttribute="leadingMargin" constant="-16" id="dsh-9t-6G0"/>
-                            <constraint firstItem="5wO-7P-akh" firstAttribute="top" secondItem="nFM-SO-gqW" secondAttribute="bottom" id="iEt-nL-qxU"/>
+                            <constraint firstItem="5wO-7P-akh" firstAttribute="top" secondItem="nFM-SO-gqW" secondAttribute="bottom" constant="20" id="iEt-nL-qxU"/>
                             <constraint firstItem="nFM-SO-gqW" firstAttribute="leading" secondItem="LgX-JV-EHv" secondAttribute="leadingMargin" constant="-16" id="rjA-Mt-RsH"/>
                             <constraint firstItem="nFM-SO-gqW" firstAttribute="top" secondItem="qf8-Q2-v52" secondAttribute="bottom" constant="-2" id="zrC-LM-QuR"/>
                         </constraints>

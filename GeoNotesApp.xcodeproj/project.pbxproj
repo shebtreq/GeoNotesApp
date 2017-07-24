@@ -21,6 +21,7 @@
 		3C4C7F261F2624AD00BC0D49 /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */; };
 		3C4C7F291F2631E600BC0D49 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4C7F281F2631E600BC0D49 /* MapKit.framework */; };
 		3C4C7F2B1F2631ED00BC0D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4C7F2A1F2631ED00BC0D49 /* UIKit.framework */; };
+		3C4C7F2D1F263A0600BC0D49 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4C7F2C1F263A0600BC0D49 /* CoreLocation.framework */; };
 		3CF42AC81F2418E200851806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42AC61F2418E200851806 /* Main.storyboard */; };
 		3CF42ACB1F2418E200851806 /* GeoNotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF42AC91F2418E200851806 /* GeoNotesApp.xcdatamodeld */; };
 		3CF42ACD1F2418E200851806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF42ACC1F2418E200851806 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		3C4C7F251F2624AD00BC0D49 /* UIWindowExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		3C4C7F281F2631E600BC0D49 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3C4C7F2A1F2631ED00BC0D49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C4C7F2C1F263A0600BC0D49 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3CF42ABF1F2418E200851806 /* GeoNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF42AC71F2418E200851806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CF42ACA1F2418E200851806 /* GeoNotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoNotesApp.xcdatamodel; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4C7F2D1F263A0600BC0D49 /* CoreLocation.framework in Frameworks */,
 				3C4C7F2B1F2631ED00BC0D49 /* UIKit.framework in Frameworks */,
 				3C4C7F291F2631E600BC0D49 /* MapKit.framework in Frameworks */,
 			);
@@ -182,6 +185,7 @@
 		3C4C7F271F2631E500BC0D49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C4C7F2C1F263A0600BC0D49 /* CoreLocation.framework */,
 				3C4C7F2A1F2631ED00BC0D49 /* UIKit.framework */,
 				3C4C7F281F2631E600BC0D49 /* MapKit.framework */,
 			);
@@ -191,11 +195,11 @@
 		3CF42AB61F2418E100851806 = {
 			isa = PBXGroup;
 			children = (
+				3C4C7F271F2631E500BC0D49 /* Frameworks */,
 				3CF42AC11F2418E200851806 /* GeoNotesApp */,
 				3CF42AD91F2418E200851806 /* GeoNotesAppTests */,
 				3CF42AE41F2418E200851806 /* GeoNotesAppUITests */,
 				3CF42AC01F2418E200851806 /* Products */,
-				3C4C7F271F2631E500BC0D49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -555,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -600,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
